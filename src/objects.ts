@@ -21,3 +21,10 @@ const user2:User={
     createdAt:new Date()
 }
 
+
+type Count={[k:string]:number};  //key of type string and not predefined and value will be number
+type Count1=Record<"likes"|"share"|"subscribe",number> //keys are predefined
+
+const c1:Count1={"likes":1,"share":10,"subscribe":100}
+
+const c2:Count={whatEver:10}
